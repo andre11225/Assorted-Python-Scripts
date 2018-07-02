@@ -1,4 +1,5 @@
-# This program simply sends a simple email with text, that's all. #
+# This program simply sends a simple email with text, that's all. 
+# Never know when you might need to quickly send out and email
 
 import smtplib
 
