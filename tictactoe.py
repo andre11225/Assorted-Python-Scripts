@@ -24,21 +24,23 @@ def Board():
         print (line)
         print (space, sec[6], space, wall, space, sec[7], space, wall, space, sec[8], space)
 
+        
+#----------------------------------------------------------------------------------------------------------------------
 
-# Player 1 is always 'X' and player 2 is always 'O' 
+
+# Player 1 is always 'X' and Player 2 is always 'O' 
 print ('Player 1 is X')
 print ('Player 2 is O\n')
 
-
-# Loop 
+# This section contains 1 loop which handles the turn by turn gameplay while also updating the game board.
 x = 0
 while( x <= 9 ):
 
     if x % 2 == 0:
-        Board()
+        Board()                            # Display options the players can pick to place their pieces.
         print('Player 1 pick a box')
-        y = int(input("enter a number: "))
-        sec[y] = 'X'
+        y = int(input("enter a number: ")) # Gets player number and converts it from String to Int
+        sec[y] = 'X'                       # Marks the selected box
 
         # Player 1 victory conditions
         if sec[0] == 'X' and sec[1] == 'X' and sec[2] == 'X':
@@ -119,6 +121,7 @@ while( x <= 9 ):
     print('\n')
     x = x + 1
 
+#---------------------------------------------------------------------------------
 
 
 
