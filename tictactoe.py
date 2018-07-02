@@ -1,3 +1,6 @@
+#Simple game I made in order to practice working with logic.
+
+# The game board that will get updated and shown every round.
 # 0 | 1 | 2   
 #-----------
 # 3 | 4 | 5 
@@ -5,7 +8,7 @@
 # 6 | 7 | 8 
 
 
-
+# Individual parts that makes up the game board
 space = " "
 empty = "   "
 wall = "|"
@@ -13,7 +16,7 @@ line = "--------------------"
 sec = ['0', '1', '2', '3', '4', '5', '6', '7', '8']
 
 
-
+# Board function used to display the update board after every turn.
 def Board():
         print (space, sec[0], space, wall, space, sec[1], space, wall, space, sec[2], space)
         print (line)
@@ -22,12 +25,12 @@ def Board():
         print (space, sec[6], space, wall, space, sec[7], space, wall, space, sec[8], space)
 
 
-#-----------------------------------------------------------------------------------------------
-
+# Player 1 is always 'X' and player 2 is always 'O' 
 print ('Player 1 is X')
 print ('Player 2 is O\n')
 
 
+# Loop 
 x = 0
 while( x <= 9 ):
 
